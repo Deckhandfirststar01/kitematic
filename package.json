@@ -23,7 +23,9 @@
     "start": "grunt",
     "start-dev": "npm run build && NODE_ENV=development grunt",
     "test": "jest -c jest-unit.json",
-    "tslint": "tslint --fix --project ./tsconfig.json"
+    "tslint": "tslint --fix --project ./tsconfig.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "electron-version": "1.8.2",
   "dependencies": {
@@ -57,7 +59,8 @@
     "rimraf": "^2.3.2",
     "underscore": "^1.8.3",
     "validator": "^4.1.0",
-    "which": "^1.2.4"
+    "which": "^1.2.4",
+    "snyk": "^1.135.1"
   },
   "devDependencies": {
     "@types/react": "^16.0.31",
@@ -79,7 +82,7 @@
     "grunt-curl": "^2.2.0",
     "grunt-download-electron": "^2.1.1",
     "grunt-electron": "^3.0.0",
-    "grunt-electron-installer": "^2.0.0",
+    "grunt-electron-installer": "^2.1.0",
     "grunt-electron-packager": "^0.1.1",
     "grunt-if-missing": "^1.0.0",
     "grunt-newer": "^1.1.1",
@@ -102,5 +105,6 @@
   "optionalDependencies": {
     "grunt-electron-installer-debian": "^0.3.0",
     "grunt-electron-installer-redhat": "^0.3.0"
-  }
+  },
+  "snyk": true
 }
