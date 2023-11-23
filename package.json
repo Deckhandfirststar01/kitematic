@@ -40,7 +40,7 @@
     "deep-extend": "^0.4.0",
     "dockerode": "^2.2.10",
     "install": "^0.1.8",
-    "jquery": "^3.0.1",
+    "jquery": "^3.5.0",
     "mixpanel": "kitematic/mixpanel-node",
     "mkdirp": "^0.5.0",
     "node-uuid": "^1.4.3",
